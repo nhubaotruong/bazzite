@@ -1,5 +1,43 @@
 # Changelog
 
+## [3.8.0](https://github.com/ublue-os/bazzite/compare/v3.7.0...v3.8.0) (2024-09-18)
+
+
+### Features
+
+* add acpica-tools to deck image ([#1643](https://github.com/ublue-os/bazzite/issues/1643)) ([dc015b4](https://github.com/ublue-os/bazzite/commit/dc015b4484808d99a4bebf066a6d330c6bde3629))
+* Add libFAudio ([2d10efa](https://github.com/ublue-os/bazzite/commit/2d10efa1ac617ad71b6068bd2298e1c74cb09ac7))
+* Add new wallpaper ([a99c585](https://github.com/ublue-os/bazzite/commit/a99c585fccb49ccc2922faa1982e8247ab859c96))
+* Add new wallpaper ([4d68aaf](https://github.com/ublue-os/bazzite/commit/4d68aaf702837934277def1d2f2a4b32ee51910e))
+* add support for onexfly 8840U ([#1636](https://github.com/ublue-os/bazzite/issues/1636)) ([04eafbb](https://github.com/ublue-os/bazzite/commit/04eafbb023c48a6f229de6b66708a07430efcb33))
+* **deck:** Add handheld scaling fix to GNOME and KDE ([813dc6c](https://github.com/ublue-os/bazzite/commit/813dc6cdcad4aeb2bfe397ed854b7d45f29f6bd8))
+* **deck:** Add ONEXPLAYER F1 support ([3decff6](https://github.com/ublue-os/bazzite/commit/3decff63feb141eb3f747b1a99703ef429479dc3))
+* **deck:** Always log into steam gaming mode on first boot ([14cb28a](https://github.com/ublue-os/bazzite/commit/14cb28a7c4174d7811286a9119bebb4cc47d0ca9))
+* **deck:** ENV to disable Steam TDP-control on deck-hardware ([#1535](https://github.com/ublue-os/bazzite/issues/1535)) ([be5757f](https://github.com/ublue-os/bazzite/commit/be5757f40869bb112cf22e4844537498bbc8379b))
+* **framework:** Add color correction profile for the new Framework 13 display. ([4f1b1d3](https://github.com/ublue-os/bazzite/commit/4f1b1d3d59f2140e310e94e403decfe83d4182a4))
+* **gnome:** Add Dynamic version of Convergence wallpaper ([75ed735](https://github.com/ublue-os/bazzite/commit/75ed7353d51f97fe13c540edb6f0c21a35cd84e8))
+* **gnome:** Add Dynamic version of Convergence wallpaper ([e1ba0f6](https://github.com/ublue-os/bazzite/commit/e1ba0f63d5d8d96a0bf42b508b95998e0e187094))
+* **gnome:** Add light mode to static Convergence wallpaper ([9babf92](https://github.com/ublue-os/bazzite/commit/9babf92ba9aa32246cd50ff6154f0b91bc62057c))
+* **gnome:** Use JXL and dynamic wallpaper by default ([dd41cbb](https://github.com/ublue-os/bazzite/commit/dd41cbb74948f5b1ca8760befe0604bd0ff53eba))
+* **gnome:** Use JXL and dynamic wallpaper by default ([97c01cd](https://github.com/ublue-os/bazzite/commit/97c01cd2e8d33f17e6805b45622977679bdf48c7))
+* **nvidia:** Add -nvidia-open images ([8faadd9](https://github.com/ublue-os/bazzite/commit/8faadd9400c97e9a40b80dd7f51b40ffc978e320))
+* **ujust:** add ujust script for disabling/enable ryzenadj --max-performance on AC power change ([#1674](https://github.com/ublue-os/bazzite/issues/1674)) ([13dd10b](https://github.com/ublue-os/bazzite/commit/13dd10bd0e37b7c6c33d8e2afdfccb471b0d231a))
+* Use bfq for MicroSD cards ([c54e495](https://github.com/ublue-os/bazzite/commit/c54e495a519c6a668cd9c0ffd1a57ea99c00f25c)), closes [#1611](https://github.com/ublue-os/bazzite/issues/1611)
+
+
+### Bug Fixes
+
+* **cec-control:** compare variable rather than variable name ([fb3d4f8](https://github.com/ublue-os/bazzite/commit/fb3d4f8f35dd8bcfc913a874316ea0dfbfaf8b3f))
+* **deck:** Add KDE-specific fractional scaling option ([d62cb24](https://github.com/ublue-os/bazzite/commit/d62cb24ae111abc3006c7140fdbcb34f55057838))
+* Disable brew update and upgrade service by default ([817bc70](https://github.com/ublue-os/bazzite/commit/817bc707b247188f25d83ea2cf7d09c7687228ba))
+* **docs:** Several fixes for mkdocs ([#1571](https://github.com/ublue-os/bazzite/issues/1571)) ([8739c23](https://github.com/ublue-os/bazzite/commit/8739c239b00d9a461c5e1658de8fa86d46af0e6e))
+* **docs:** Use a working match substitution in md_image_sizing hook ([#1584](https://github.com/ublue-os/bazzite/issues/1584)) ([b7ded48](https://github.com/ublue-os/bazzite/commit/b7ded48ce1572a7747341fba5d1e4a1404260650))
+* Drop zstd compression for zram, falls back to default lz4 ([5ef67b4](https://github.com/ublue-os/bazzite/commit/5ef67b4290e1bf083fad7beba959b31909c411c7))
+* Further reduce BTRFS resource allocations ([6066946](https://github.com/ublue-os/bazzite/commit/606694634c6b166cf1962e1703d5e6afd375b9f9))
+* **gnome:** Don't remove steam .desktop files, these are auto-categorized now ([f4b0baa](https://github.com/ublue-os/bazzite/commit/f4b0baa3c5ff93468c35d82d232ba4c5e093a0d2))
+* **nvidia:** Re-enable GSP firmware ([8faadd9](https://github.com/ublue-os/bazzite/commit/8faadd9400c97e9a40b80dd7f51b40ffc978e320))
+* Set nice value in btrfs-dedup script to ensure anything it spawns is handled appropriately ([b01a7c4](https://github.com/ublue-os/bazzite/commit/b01a7c42a5d9da8f0b6ffba17ca5ea70aae33394))
+
 ## 3.7.0 (2024-08-28)
 
 
